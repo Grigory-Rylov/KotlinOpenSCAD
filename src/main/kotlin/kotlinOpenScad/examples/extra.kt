@@ -11,7 +11,7 @@ import kotlin.math.cos
 import kotlin.math.sin
 
 fun ScadCode.boltHole(radius: Number, topRadius: Number, height: Number, coneHeight: Number) {
-    translate(z = -1).of {
+    translate(z = -1) {
         cylinder(radius = radius, height = height.toDouble() + 2)
         translate(z = coneHeight.toDouble() + 1).cylinder(bottomRadius = radius, topRadius = topRadius, height = coneHeight.toDouble() + 2)
     }
