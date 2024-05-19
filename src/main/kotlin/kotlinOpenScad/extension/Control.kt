@@ -61,6 +61,11 @@ fun ScadCode.callModule(
     command("${name}($params)")
 }
 
+fun ScadCode.import(
+    params: String
+) {
+    command("import(\"$params\")")
+}
 
 fun ScadCode.FUNCTION(
     name: String,

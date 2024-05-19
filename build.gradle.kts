@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "me.z"
-version = "1.0-SNAPSHOT"
+version = "0.3.0"
 
 repositories {
     mavenCentral()
