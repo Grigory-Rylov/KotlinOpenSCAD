@@ -75,3 +75,9 @@ fun ScadCode.FUNCTION(
     command("function $name($params) = $expression")
     return ScadFunctionName(name)
 }
+
+fun ScadCode.fn(
+    fnValue: Int
+) {
+    command("\$fn = $fnValue")
+}
