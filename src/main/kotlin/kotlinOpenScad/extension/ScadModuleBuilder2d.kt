@@ -23,7 +23,7 @@ fun ScadCode.circle(
 
 fun ScadCode.square(
     size: Number,
-    center: Boolean? = null
+    center: Boolean = true
 ) {
     val params = _buildParams(
         "size" to size,
@@ -35,7 +35,7 @@ fun ScadCode.square(
 fun ScadCode.square(
     sizeX: Number? = null,
     sizeY: Number? = null,
-    center: Boolean? = null
+    center: Boolean = true
 ) {
     val params = _buildParams(
         "size" to _buildParamsArray(sizeX, sizeY),

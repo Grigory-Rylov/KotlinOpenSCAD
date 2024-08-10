@@ -4,7 +4,7 @@ import kotlinOpenScad.core.ScadCode
 
 fun ScadCode.linearExtrude(
     height: Number?,
-    center: Boolean? = null,
+    center: Boolean = true,
     convexity: Number? = null,
     twist: Number? = null,
     slices: Int? = null,
@@ -25,7 +25,7 @@ fun ScadCode.linearExtrude(
 
 fun ScadCode.linearExtrude(
     height: Number?,
-    center: Boolean? = null,
+    center: Boolean = true,
     convexity: Number? = null,
     twist: Number? = null,
     slices: Int? = null,
@@ -49,7 +49,7 @@ fun ScadCode.linearExtrude(
 
 fun ScadCode.linearExtrude(
     height: Number?,
-    center: Boolean? = null,
+    center: Boolean = true,
     convexity: Number? = null,
     twist: Number? = null,
     slices: Int? = null,
@@ -71,7 +71,7 @@ fun ScadCode.linearExtrude(
 
 fun ScadCode.linearExtrude(
     height: Number?,
-    center: Boolean? = null,
+    center: Boolean = true,
     convexity: Number? = null,
     twist: Number? = null,
     slices: Int? = null,

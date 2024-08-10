@@ -100,7 +100,7 @@ fun ScadCode.cylinder(
     diameter: Number? = null,
     bottomDiameter: Number? = null,
     topDiameter: Number? = null,
-    center: Boolean? = null,
+    center: Boolean = true,
     fragmentMinimumAngle: Number? = null,
     fragmentMinimumLength: Number? = null,
     fragmentCount: Int? = null
@@ -122,7 +122,7 @@ fun ScadCode.cylinder(
 }
 
 fun ScadCode.cube(
-    size: Number, center: Boolean = false
+    size: Number, center: Boolean = true
 ) {
     val params = _buildParams(
         "size" to size, "center" to center
@@ -131,7 +131,7 @@ fun ScadCode.cube(
 }
 
 fun ScadCode.surface(
-    filename: Any, center: Boolean? = null, invert: Boolean? = null, convexity: Int? = null
+    filename: Any, center: Boolean = true, invert: Boolean? = null, convexity: Int? = null
 ) {
     val params = _buildParams(
         "file" to _prepareText(filename),
@@ -143,7 +143,7 @@ fun ScadCode.surface(
 }
 
 fun ScadCode.cube(
-    x: Number, y: Number, z: Number, center: Boolean = false
+    x: Number, y: Number, z: Number, center: Boolean = true
 ) {
     val params = _buildParams(
         "size" to _buildParamsArray(x, y, z), "center" to center
